@@ -2,14 +2,14 @@ package ProgramControl;
 
 public class Person {
 
-    public String name;
+    public String name; // Data Member
 
-    public Person(String name) {
+    public Person(String name) { // Constructor
         this.name = name;
     }
 
     @Override
-    public String toString() {
+    public String toString() { // Overriding a base class method called toString()
         return this.name;
     }
 }

@@ -66,6 +66,13 @@ public class Worker {
             System.out.println("Age is equal to 25.");
         }
 
+        // If else...
+        if (age == 25) {
+            System.out.println("Age is equal to 25.");
+        } else {
+            System.out.println("Age is not equal to 25.");
+        }
+
         // Else if...
         if (age < 10) {
             System.out.println("Young");
@@ -153,7 +160,7 @@ public class Worker {
         System.out.println(magicNumber);
         System.out.println(magicNumber2);
 
-        // Primatives are passed by value (AKA passed by copy), their value will not "stick"
+        // Primatives are passed by value (AKA passed by copy), their value will not persisted after returning from the function.
         System.out.println(magicNumber);
         incrementMagicNumber(magicNumber);
         System.out.println(magicNumber);
