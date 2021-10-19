@@ -1,5 +1,7 @@
 package ProgramControl;
 
+import java.util.Scanner;
+
 public class Worker {
 
     public Worker() { } // Constructor
@@ -48,6 +50,18 @@ public class Worker {
         var car = new Person("Mary"); // Poorly named!
 
         System.out.println(person1);
+    }
+
+    public void processInput() {
+        Scanner inScanner = new Scanner(System.in);
+
+        System.out.println("Enter your name: ");
+        String inputString = inScanner.nextLine();
+
+        System.out.println("Enter your age (years): ");
+        String ageString = inScanner.nextLine();
+
+        System.out.println(String.format("Hello %s, you are %s years old.", inputString, ageString));
     }
 
     public void scope() {

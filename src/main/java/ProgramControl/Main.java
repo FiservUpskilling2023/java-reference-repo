@@ -10,5 +10,6 @@ public class Main {
         worker.loops();
         worker.equalityTest();
         worker.functions();
+        worker.processInput();
     }
 }
