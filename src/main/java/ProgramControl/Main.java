@@ -8,6 +8,7 @@ public class Main {
         worker.ifElse();
         worker.switchKeyword();
         worker.loops();
+        worker.equalityTest();
         worker.functions();
     }
 }

@@ -9,8 +9,8 @@ public class Worker {
 
         // Strings...
         String myString1 = "This is my string";  // Camel case.
-        var myString2 = "This is another string"; // Type inference.
-        var thing = "This variable is poorly named";
+        var myString2 = "This is another string"; // var keyword indicates type inference.
+        var thing = "This variable is poorly named"; // Do not do this.
 
         System.out.println(myString1);
         System.out.println(myString2);
@@ -141,6 +141,10 @@ public class Worker {
         }
     }
 
+    public void megaList() { // Do not do this.
+        // Poorly named function.
+    }
+
     public void functions() {
         System.out.println("*** Functions ***");
 
@@ -172,6 +176,25 @@ public class Worker {
 
         var p2 = createPerson("Billy");
         System.out.println(p2);
+    }
+
+    public void equalityTest() {
+        var p2 = new Person("Joe");
+        var p3 = new Person("Joe");
+        var p4 = p3;
+
+        // Equality.
+        if (p3.equals(p2)) { // Mouse hover over equals: Two people are equal if they have the same name.
+            System.out.println("Equal.");
+        }
+
+        // Identity.
+        if (p2 == p3) {
+            System.out.printf("This does not get displayed!!!!");
+        }
+        if (p3 == p4) {
+            System.out.println("Identity is equal.");
+        }
     }
 
     //
