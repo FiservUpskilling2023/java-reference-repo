@@ -1,0 +1,15 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="DEV: Local" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="ProgramControl.Main" />
+    <module name="java-program-control" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="ProgramControl.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
