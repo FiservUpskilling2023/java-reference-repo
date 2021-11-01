@@ -11,7 +11,7 @@ public class Main {
 //        worker.equalityTest();
 //        worker.functions();
 //        worker.processInput();
-        worker.optionals();
-        //worker.enums();
+//        worker.optionals();
+        worker.enums();
     }
 }

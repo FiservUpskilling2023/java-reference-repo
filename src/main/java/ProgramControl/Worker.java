@@ -1,6 +1,11 @@
 package ProgramControl;
 
-import javax.swing.text.html.Option;
+import ProgramControl.Enums.Make;
+import ProgramControl.Enums.Transport;
+import ProgramControl.Enums.DaysOfWeek;
+import ProgramControl.Exceptions.PersonNotFoundException;
+import ProgramControl.Models.Person;
+
 import java.util.Optional;
 import java.util.Scanner;
 
@@ -255,8 +260,28 @@ public class Worker {
     }
 
     public void enums() {
+        // https://youtu.be/hrEF3M2LCrc
         var m = Make.CHEVY;
         System.out.println(m);
+
+        var firstDay = DaysOfWeek.MONDAY;
+
+        if (firstDay == DaysOfWeek.MONDAY) {
+            System.out.println("Today is Monday.");
+        }
+        else {
+            System.out.println("Today is not Monday.");
+        }
+
+        // Print..
+        var enumList = Make.values(); // var ==> type inference.
+        for (Make make: enumList) { // For each.
+            System.out.println(make);
+        }
+
+        // Enums can be like very simple classes.
+        var t = Transport.AUTOMOBILE.speed;
+        System.out.println(t);
     }
 
     //

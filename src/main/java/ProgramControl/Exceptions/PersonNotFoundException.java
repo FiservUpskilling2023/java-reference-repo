@@ -1,4 +1,4 @@
-package ProgramControl;
+package ProgramControl.Exceptions;
 
 public class PersonNotFoundException extends Exception {
 

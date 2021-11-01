@@ -1,4 +1,4 @@
-package ProgramControl;
+package ProgramControl.Models;
 
 public class Person {
 
