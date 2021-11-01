@@ -54,7 +54,7 @@ public class Worker {
         // Objects...
         Person person1 = new Person("Joe"); // Reference type.
         var person2 = new Person("Fred"); // person2 is a reference to an instance of a Person object.
-        var car = new Person("Mary"); // Poorly named!
+        var car = new Person("Mary"); // Poorly named!  Do not do this.
 
         System.out.println(person1);
     }
@@ -62,13 +62,13 @@ public class Worker {
     public void processInput() {
         Scanner inScanner = new Scanner(System.in);
 
-        System.out.println("Enter your name: ");
+        System.out.print("Enter your name: ");
         String inputString = inScanner.nextLine();
 
-        System.out.println("Enter your age (years): ");
-        String ageString = inScanner.nextLine();
+        System.out.print("Enter your age (years): ");
+        Byte ageString = inScanner.nextByte();
 
-        System.out.println(String.format("Hello %s, you are %s years old.", inputString, ageString));
+        System.out.println(String.format("Hello %s, you are %s years old.", inputString, ageString)); // Implicity conversion: ageString (a byte) is converted to a String.
     }
 
     public void scope() {
@@ -101,6 +101,8 @@ public class Worker {
             System.out.println("Child");
         } else if (age >= 20) {
             System.out.println("Adult");
+        } else {
+            System.out.println("Unknown");
         }
     }
 
@@ -199,22 +201,43 @@ public class Worker {
         System.out.println(p2);
     }
 
-    public void equalityTest() {
+    public void equalityVersusIdentityTest() {
+
+        //
+        // PRIMATIVE TYPES (AKA VALUE TYPES): byte, short, int, long, float, double, char, boolean
+        // NOTE: == is used for EQUALITY for PRIMATIVE TYPES.
+        //
+
+        int a = 5;
+        int b = 5;
+
+        if (a == b) {
+            System.out.println("The value of a is equal to the value of b.");
+        } else {
+            System.out.println("The value of a is not equal to the value of b.");
+        }
+
+        //
+        // REFERENCE TYPES
+        // NOTE: == is used for IDENTITY for REFERENCE TYPES.
+        //
+
         var p2 = new Person("Joe");
         var p3 = new Person("Joe");
         var p4 = p3;
 
-        // Equality.
-        if (p3.equals(p2)) { // Mouse hover over equals: Two people are equal if they have the same name.
-            System.out.println("Equal.");
-        }
-
         // Identity.
         if (p2 == p3) {
-            System.out.printf("This does not get displayed!!!!");
+            // Unreachable code here: p2 and p3 point to different objects in memory.
         }
+
         if (p3 == p4) {
-            System.out.println("Identity is equal.");
+            System.out.println("p3 and p4 point to the same object in memory.");
+        }
+
+        // Equality.
+        if (p2.equals(p3)) { // Mouse hover over equals: Two people are equal if they have the same name.
+            System.out.println("p2 and p3 have equal values but are different objects in memory.");
         }
     }
 

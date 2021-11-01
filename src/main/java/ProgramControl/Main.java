@@ -8,7 +8,7 @@ public class Main {
         worker.ifElse();
         worker.switchKeyword();
         worker.loops();
-        worker.equalityTest();
+        worker.equalityVersusIdentityTest();
         worker.functions();
         worker.processInput();
         worker.optionals();
