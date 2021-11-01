@@ -1,5 +1,7 @@
 package ProgramControl;
 
+import javax.swing.text.html.Option;
+import java.util.Optional;
 import java.util.Scanner;
 
 public class Worker {
@@ -211,9 +213,66 @@ public class Worker {
         }
     }
 
+    public void optionals() {
+        // Essentially wrappers to help elminate NullPointerException errors, introduced in Java 8.
+        // Empty optionals throw NoSuchElementException.  Feels like we are just swapping exceptions.
+        // https://youtu.be/PlOSuPVNy7k
+
+        var integerValue = Optional.<Integer>empty();
+        //integerValue = Optional.of(null); // Throws NullPointerException (do not do this)
+        //
+        integerValue = Optional.ofNullable(null);
+        //integerValue = Optional.of(5150);
+
+        if (integerValue.isPresent()) {
+            System.out.println(integerValue.get());
+        }
+
+        System.out.println(integerValue.orElse(-1));
+        System.out.println(integerValue.orElseGet(() -> 100));
+
+        try {
+            System.out.println(integerValue.orElseThrow(() -> new PersonNotFoundException("Your Person was not found.")));
+        }
+        catch(PersonNotFoundException pnfe) {
+            System.out.println(pnfe.getMessage());
+        }
+
+        System.out.println(integerValue.map( x -> x + 1).orElse(-100));
+        System.out.println(integerValue.map( x -> x + " lines.").orElse("no lines"));
+        System.out.println(integerValue.filter(x-> x > 5000).orElse(-11));
+
+        // Old way, before Optionals...
+        //var p = getPersonNull(123);
+        //System.out.println(p.name); // java.lang.NullPointerException
+
+        // New way, using Optionals...
+        var p2 = getPersonOptional(123);
+
+
+        System.out.println(p2.orElseGet(() -> new Person("none")));
+    }
+
+    public void enums() {
+        var m = Make.CHEVY;
+        System.out.println(m);
+    }
+
     //
     // Private helper functions.
     //
+
+    private Optional<Person> getPersonOptional(int personId) {
+        Optional<Person> retval = Optional.empty();
+        //retval = Optional.of(new Person("Joe"));
+        return retval;
+    }
+
+    private Person getPersonNull(int personId) {
+        // Query data, no person found...
+        return null;
+    }
+
 
     private String[] getStudents() {
         String[] retval = new String[3];
