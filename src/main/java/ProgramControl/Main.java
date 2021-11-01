@@ -13,5 +13,8 @@ public class Main {
         worker.processInput();
         worker.optionals();
         worker.enums();
+        worker.constants();
+        worker.casting();
+        worker.prescendence();
     }
 }

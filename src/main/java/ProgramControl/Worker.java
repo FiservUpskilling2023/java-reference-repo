@@ -282,6 +282,16 @@ public class Worker {
         p2.ifPresent((p) -> System.out.println(p.name)); // This line is executed only if there is a value present.
     }
 
+    private Optional<Person> getPersonOptional(int personId) {
+//        Optional<Person> retval = Optional.empty();
+//        //retval = Optional.of(new Person("Joe"));
+//        return retval;
+
+        Person retval = null;
+        //retval = new Person("Joey Jr.");
+        return Optional.ofNullable(retval);
+    }
+
     public void enums() {
         // https://youtu.be/hrEF3M2LCrc
         var m = Make.CHEVY;
@@ -307,19 +317,35 @@ public class Worker {
         System.out.println(t);
     }
 
+    public void constants() {
+        final int a = 5;
+        // = 6; // Cannot assign a final variable to 'a'
+    }
+
+    public void casting() {
+        byte s = 1;
+        double d = 1;
+        var total = s + d;  // s gets implicity cast to a double.
+        System.out.println(s);
+        System.out.println(d);
+        System.out.println(total);
+    }
+
+    public void prescendence() {
+        // ()
+        // * /
+        // + -
+        int result1 = 4 * 2 / 1 + 1;
+        int result2 = (4 * 2) / 1 + 1;
+        int result3 = 4 * (2 / 1 + 1);
+        System.out.println(result1);
+        System.out.println(result2);
+        System.out.println(result3);
+    }
+
     //
     // Private helper functions.
     //
-
-    private Optional<Person> getPersonOptional(int personId) {
-//        Optional<Person> retval = Optional.empty();
-//        //retval = Optional.of(new Person("Joe"));
-//        return retval;
-
-        Person retval = null;
-        //retval = new Person("Joey Jr.");
-        return Optional.ofNullable(retval);
-    }
 
     private String[] getStudents() {
         String[] retval = new String[3];
