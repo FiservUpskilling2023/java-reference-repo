@@ -336,7 +336,7 @@ public class Worker {
         System.out.println(result);
     }
 
-    public void prescendence() {
+    public void precendence() {
         // () <== Highest
         // * /
         // + - <== Lowest
