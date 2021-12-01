@@ -367,7 +367,7 @@ public class Worker {
     // Private methods
     //
 
-    public boolean isNumeric(String s) {
+    private boolean isNumeric(String s) {
         return s != null && s.matches("[-+]?\\d*\\.?\\d+");
     }
 
