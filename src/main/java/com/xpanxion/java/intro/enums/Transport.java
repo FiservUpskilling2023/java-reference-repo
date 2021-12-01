@@ -1,4 +1,4 @@
-package ProgramControl.Enums;
+package com.xpanxion.java.intro.enums;
 
 public enum Transport { // Enums can be like very simple classes.
 

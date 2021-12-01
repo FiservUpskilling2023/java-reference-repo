@@ -1,4 +1,4 @@
-package ProgramControl;
+package com.xpanxion.java.intro;
 
 public class Main {
     public static void main(String[] args) {

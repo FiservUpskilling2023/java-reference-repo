@@ -1,4 +1,4 @@
-package ProgramControl.Enums;
+package com.xpanxion.java.intro.enums;
 
 public enum Make { // Enumerated Constant.
     FORD,   // Ordinal: 0

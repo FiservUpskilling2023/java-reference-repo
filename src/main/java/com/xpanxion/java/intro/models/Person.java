@@ -1,14 +1,26 @@
-package ProgramControl.Models;
+package com.xpanxion.java.intro.models;
 
 import java.util.Objects;
 
 public class Person {
 
+    //
+    // Data members
+    //
+
     public String name; // Data Member
+
+    //
+    // Constructor
+    //
 
     public Person(String name) { // Constructor
         this.name = name;
     }
+
+    //
+    // Overrides
+    //
 
     @Override
     public String toString() { // Overriding a base class method called toString()
@@ -26,5 +38,5 @@ public class Person {
     @Override
     public int hashCode() {
         return Objects.hash(name);
-    }
+    } // Required for .equals()
 }

@@ -1,10 +1,10 @@
-package ProgramControl;
+package com.xpanxion.java.intro;
 
-import ProgramControl.Enums.Make;
-import ProgramControl.Enums.Transport;
-import ProgramControl.Enums.DaysOfWeek;
-import ProgramControl.Exceptions.PersonNotFoundException;
-import ProgramControl.Models.Person;
+import com.xpanxion.java.intro.enums.Make;
+import com.xpanxion.java.intro.enums.Transport;
+import com.xpanxion.java.intro.enums.DaysOfWeek;
+import com.xpanxion.java.intro.exceptions.PersonNotFoundException;
+import com.xpanxion.java.intro.models.Person;
 
 import java.util.Optional;
 import java.util.Scanner;
@@ -41,7 +41,7 @@ public class Worker {
         System.out.println(myNumber4);
 
         // Arrays...
-        int[] myArray1 = { 11,22,33 };
+        int[] myArray1 = { 11, 22, 33 };
         System.out.println(myArray1[0]); // Zero based: first item in the array is 0, not 1.
         System.out.println(myArray1[1]);
         System.out.println(myArray1[2]);
@@ -236,7 +236,7 @@ public class Worker {
         }
 
         // Equality.
-        if (p2.equals(p3)) { // Mouse hover over equals: Two people are equal if they have the same name.
+        if (p2.equals(p3)) { // Two people are equal if they have the same name, because we said so in the Person class.
             System.out.println("p2 and p3 have equal values but are different objects in memory.");
         }
     }
@@ -293,7 +293,6 @@ public class Worker {
     }
 
     public void enums() {
-        // https://youtu.be/hrEF3M2LCrc
         var m = Make.CHEVY;
         System.out.println(m);
 
@@ -325,16 +324,24 @@ public class Worker {
     public void casting() {
         byte s = 1;
         double d = 1;
-        var total = s + d;  // s gets implicity cast to a double.
+        var total = s + d;  // s is implicity cast to a double
+
+        int a = 3;
+        double b = 5;
+        var result = a + b; // a is implicty cast (up) to a double (wide cast)
+
+        int c = (int)b; // c is explicity cast (down) to an integer.
+
         System.out.println(s);
         System.out.println(d);
         System.out.println(total);
+        System.out.println(result);
     }
 
     public void prescendence() {
-        // ()
+        // () <== Highest
         // * /
-        // + -
+        // + - <== Lowest
         int result1 = 4 * 2 / 1 + 1;
         int result2 = (4 * 2) / 1 + 1;
         int result3 = 4 * (2 / 1 + 1);

@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="DEV: Local" type="Application" factoryName="Application">
-    <option name="MAIN_CLASS_NAME" value="ProgramControl.Main" />
+    <option name="MAIN_CLASS_NAME" value="com.xpanxion.java.intro.Main" />
     <module name="java-program-control" />
     <extension name="coverage">
       <pattern>

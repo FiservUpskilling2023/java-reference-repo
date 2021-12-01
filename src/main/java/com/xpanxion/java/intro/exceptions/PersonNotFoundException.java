@@ -1,4 +1,4 @@
-package ProgramControl.Exceptions;
+package com.xpanxion.java.intro.exceptions;
 
 public class PersonNotFoundException extends Exception {
 
