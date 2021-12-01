@@ -8,10 +8,10 @@ public class Person {
     // Data members
     //
 
-    public String name; // Data Member
+    public String name;
 
     //
-    // Constructor
+    // Constructors
     //
 
     public Person(String name) { // Constructor
