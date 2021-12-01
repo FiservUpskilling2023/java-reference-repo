@@ -11,7 +11,15 @@ import java.util.Scanner;
 
 public class Worker {
 
-    public Worker() { } // Constructor
+    //
+    // Constructors
+    //
+
+    public Worker() { } // No arguement constructor.
+
+    //
+    // Public methods
+    //
 
     public void variables() {
         System.out.println("*** Variables ***");
@@ -237,7 +245,7 @@ public class Worker {
 
         // Equality.
         if (p2.equals(p3)) { // Two people are equal if they have the same name, because we said so in the Person class.
-            System.out.println("p2 and p3 have equal values but are different objects in memory.");
+            System.out.println("p2 and p3 are considered to be equal but are different objects in memory.");
         }
     }
 
@@ -280,16 +288,6 @@ public class Worker {
         var p2 = getPersonOptional(123);
         System.out.println(p2.orElseGet(() -> new Person("none")));
         p2.ifPresent((p) -> System.out.println(p.name)); // This line is executed only if there is a value present.
-    }
-
-    private Optional<Person> getPersonOptional(int personId) {
-//        Optional<Person> retval = Optional.empty();
-//        //retval = Optional.of(new Person("Joe"));
-//        return retval;
-
-        Person retval = null;
-        //retval = new Person("Joey Jr.");
-        return Optional.ofNullable(retval);
     }
 
     public void enums() {
@@ -351,8 +349,18 @@ public class Worker {
     }
 
     //
-    // Private helper functions.
+    // Private methods
     //
+
+    private Optional<Person> getPersonOptional(int personId) {
+//        Optional<Person> retval = Optional.empty();
+//        //retval = Optional.of(new Person("Joe"));
+//        return retval;
+
+        Person retval = null;
+        //retval = new Person("Joey Jr.");
+        return Optional.ofNullable(retval);
+    }
 
     private String[] getStudents() {
         String[] retval = new String[3];
