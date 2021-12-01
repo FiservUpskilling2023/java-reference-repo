@@ -211,6 +211,7 @@ public class Worker {
         System.out.println(magicNumber2);
 
         // Primatives are passed by value (AKA passed by copy), their value will not persisted after returning from the function.
+        System.out.println("*** Pass by Value ***");
         System.out.println(magicNumber);
         incrementMagicNumber(magicNumber);
         System.out.println(magicNumber);
@@ -338,17 +339,15 @@ public class Worker {
         byte s = 1;
         double d = 1;
         var total = s + d;  // s is implicity cast to a double
+        System.out.println(total);
 
         int a = 3;
-        double b = 5;
-        var result = a + b; // a is implicty cast (up) to a double (wide cast)
+        double b = 5.0;
+        var result = a + b; // a is implicty cast (up) to a double (wide cast) (widden/up casted/promoted)
+        System.out.println(result);
 
         int c = (int)b; // c is explicity cast (down) to an integer.
-
-        System.out.println(s);
-        System.out.println(d);
-        System.out.println(total);
-        System.out.println(result);
+        System.out.println(c);
     }
 
     public void precendence() {
@@ -398,7 +397,7 @@ public class Worker {
     }
 
     private void incrementMagicNumber(int number) {
-        number++;
+        number = 5150;
     }
 
     private void updatePersonName(Person p, String newName) { // Awkward: Not encouraged.

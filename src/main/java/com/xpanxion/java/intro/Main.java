@@ -3,7 +3,7 @@ package com.xpanxion.java.intro;
 public class Main {
     public static void main(String[] args) {
         Worker worker = new Worker();
-        worker.variables();
+//        worker.variables();
 //        worker.scope();
 //        worker.ifElse();
 //        worker.switchKeyword();
@@ -14,7 +14,7 @@ public class Main {
 //        worker.optionals();
 //        worker.enums();
 //        worker.constants();
-//        worker.casting();
+        worker.casting();
 //        worker.precendence();
     }
 }
