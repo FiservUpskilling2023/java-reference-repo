@@ -38,10 +38,10 @@ public class Worker {
 
         // Numbers...
         int myNumber1 = 1;
-        Integer myNumber2 = 1;
+        Integer myNumber2 = 1; // Integer wraps int.
 
         double myNumber3 = 1.2;
-        Double myNumber4 = 1.2;
+        Double myNumber4 = 1.2; // Double wraps double.
 
         System.out.println(myNumber1);
         System.out.println(myNumber2);
