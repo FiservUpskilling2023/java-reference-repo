@@ -22,9 +22,8 @@ public class Worker {
     //
 
     public void variables() {
-        System.out.println("*** Variables ***");
-
         // Strings...
+        System.out.println("*** Strings ***");
         String myString1 = "This is my string";  // Camel case.
         var myString2 = "This is another string"; // var keyword indicates type inference.
         var thing = "This variable is poorly named"; // Do not do this.
@@ -33,10 +32,11 @@ public class Worker {
         System.out.println(myString2);
         System.out.println(thing);
 
-        var mySpecialString = "---Title---\nline one\nline two\nline three";  // Backslash represents an escape character.
+        var mySpecialString = "----- Title -----\nLine one.\nLine two.\nLine three.\nLine four:\tone\ttwo\tthree";  // Backslash represents an escape character.
         System.out.println(mySpecialString);
 
         // Numbers...
+        System.out.println("*** Numbers ***");
         int myNumber1 = 1;
         Integer myNumber2 = 1; // Integer wraps int.
 
@@ -48,7 +48,20 @@ public class Worker {
         System.out.println(myNumber3);
         System.out.println(myNumber4);
 
+        // Conversions...
+        System.out.println("*** Conversions ***");
+        // Int to String.
+        int myNumber5 = 44;
+        var myString = String.valueOf(myNumber5);
+        System.out.println(myString);
+
+        // String to Int.
+        var myString3 = "45";
+        var myInteger = Integer.parseInt(myString3);
+        System.out.println(myString3);
+
         // Arrays...
+        System.out.println("*** Arrays ***");
         int[] myArray1 = { 11, 22, 33 };
         System.out.println(myArray1[0]); // Zero based: first item in the array is 0, not 1.
         System.out.println(myArray1[1]);
@@ -60,10 +73,10 @@ public class Worker {
         System.out.println(myArray2[2]);
 
         // Objects...
+        System.out.println("*** Objects ***");
         Person person1 = new Person("Joe"); // Reference type.
         var person2 = new Person("Fred"); // person2 is a reference to an instance of a Person object.
         var car = new Person("Mary"); // Poorly named!  Do not do this.
-
         System.out.println(person1);
     }
 
