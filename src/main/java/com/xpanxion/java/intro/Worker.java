@@ -74,9 +74,9 @@ public class Worker {
         String inputString = inScanner.nextLine();
 
         System.out.print("Enter your age (years): ");
-        Byte ageString = inScanner.nextByte();
+        Byte age = inScanner.nextByte();
 
-        System.out.println(String.format("Hello %s, you are %s years old.", inputString, ageString)); // Implicity conversion: ageString (a byte) is converted to a String.
+        System.out.println(String.format("Hello %s, you are %s years old.", inputString, age)); // Implicit conversion: age is converted from a Byte to a String.
     }
 
     public void scope() {
