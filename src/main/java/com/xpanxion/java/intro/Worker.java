@@ -15,7 +15,7 @@ public class Worker {
     // Constructors
     //
 
-    public Worker() { } // No arguement constructor.
+    public Worker() { } // No argument constructor.
 
     //
     // Public methods
