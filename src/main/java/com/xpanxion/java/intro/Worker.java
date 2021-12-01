@@ -56,9 +56,11 @@ public class Worker {
         System.out.println(myString);
 
         // String to Int.
-        var myString3 = "45";
-        var myInteger = Integer.parseInt(myString3);
-        System.out.println(myString3);
+        var myString3 = "45"; // "45abc"
+        if (this.isNumeric(myString3)) { // If we don't check, Integer.parseInt() throws a NumberFormatException for non-numeric values.
+            var myInteger = Integer.parseInt(myString3);
+            System.out.println(myString3);
+        }
 
         // Arrays...
         System.out.println("*** Arrays ***");
@@ -364,6 +366,10 @@ public class Worker {
     //
     // Private methods
     //
+
+    public boolean isNumeric(String s) {
+        return s != null && s.matches("[-+]?\\d*\\.?\\d+");
+    }
 
     private Optional<Person> getPersonOptional(int personId) {
 //        Optional<Person> retval = Optional.empty();
