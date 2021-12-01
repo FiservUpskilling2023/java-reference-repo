@@ -57,7 +57,7 @@ public class Worker {
 
         // String to Int.
         var myString3 = "45"; // "45abc"
-        if (this.isNumeric(myString3)) { // If we don't check, Integer.parseInt() throws a NumberFormatException for non-numeric values.
+        if (isNumeric(myString3)) { // If we don't check, Integer.parseInt() throws a NumberFormatException for non-numeric values.
             var myInteger = Integer.parseInt(myString3);
             System.out.println(myString3);
         }
