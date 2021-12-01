@@ -315,8 +315,8 @@ public class Worker {
     }
 
     public void constants() {
-        final int a = 5;
-        // = 6; // Cannot assign a final variable to 'a'
+        final int MEANING_OF_LIFE = 42;
+        // MEANING_OF_LIFE = 1; // Cannot do this.
     }
 
     public void casting() {
