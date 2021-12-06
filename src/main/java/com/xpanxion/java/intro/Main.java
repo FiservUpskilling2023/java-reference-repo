@@ -9,12 +9,12 @@ public class Main {
 //        worker.switchKeyword();
 //        worker.loops();
 //        worker.equalityVersusIdentityTest();
-//        worker.functions();
+        worker.functions();
 //        worker.processInput();
 //        worker.optionals();
 //        worker.enums();
 //        worker.constants();
-        worker.casting();
+//        worker.casting();
 //        worker.precendence();
     }
 }
