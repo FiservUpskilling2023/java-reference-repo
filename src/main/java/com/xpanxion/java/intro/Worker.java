@@ -204,13 +204,13 @@ public class Worker {
 //        p = updatePersonName2(p, "Mary");
 //        System.out.println(p);
 //
-//        // Primatives...
+//        // Primitives...
 //        int magicNumber = getMagicNumber();
 //        int magicNumber2 = getMagicNumber(2);
 //        System.out.println(magicNumber);
 //        System.out.println(magicNumber2);
 //
-//        // Primatives are passed by value (AKA passed by copy), their value will not persisted after returning from the function.
+//        // Primitives are passed by value (AKA passed by copy), their value will not persisted after returning from the function.
 //        System.out.println("*** Pass by Value ***");
 //        System.out.println(magicNumber);
 
@@ -230,7 +230,7 @@ public class Worker {
     public void equalityVersusIdentityTest() {
 
         //
-        // PRIMATIVE TYPES (AKA VALUE TYPES): byte, short, int, long, float, double, char, boolean
+        // PRIMITIVE TYPES (AKA VALUE TYPES): byte, short, int, long, float, double, char, boolean
         // NOTE: == is used for EQUALITY for PRIMATIVE TYPES.
         //
 
