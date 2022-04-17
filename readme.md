@@ -19,7 +19,7 @@ A reference repo that illustrates the following:
 - Navigate to the Main class, click on the green arrow to run the application
 
 # Videos
-- [Java Tutorial for Beginners (2h30m)](https://youtu.be/eIrMbAQSU34)
+- [Java Tutorial for Beginners (2h 30m)](https://youtu.be/eIrMbAQSU34)
 - [Java Tutorial - For Beginners (3h)](https://youtu.be/Yv_4RXyLjL8)
 - [Java Programming Tutorial 6 - Variables (9m)](https://youtu.be/7wWvSn_qiBc)
 - [Java For Beginners: While, Do While & For Loops (11m)](https://youtu.be/6djggrlkHY8)
@@ -27,7 +27,7 @@ A reference repo that illustrates the following:
 - [Java Final Keyword Tutorial - Learn Final Variables, Methods and Classes (7m)](https://youtu.be/730BMKm4qYM)
 - [Casting in Java (8m)](https://youtu.be/9ATVKpRZaPg)
 - [Operator Precedence (Java Tutorial) (5m)](https://youtu.be/gEJEDdambGc)		
-- [Identity vs. Equality in Java with coding examples(6m)](https://youtu.be/OOpO46_k7Uo	)
+- [Identity vs. Equality in Java with coding examples (6m)](https://youtu.be/OOpO46_k7Uo	)
 - [Java is pass/call by value or pass/call by reference (8m)](https://youtu.be/w4sGl3HxgZw)
 - [Java OOPs Concepts (30m)](https://youtu.be/7GwptabrYyk)
 
