@@ -35,7 +35,7 @@ A reference repo that illustrates the following:
 
 
 # Overview
-- There are two types in Java: Primitvie Types and Refernce Types:
+- There are two types in Java: Primitvie Types and Reference Types:
   - [8 Primitive Types (Value Types)](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
   - Reference types are objects
 - The debugger is your friend!
