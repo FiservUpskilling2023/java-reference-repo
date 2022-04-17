@@ -32,7 +32,8 @@ A reference repo that illustrates the following:
 - [Java OOPs Concepts (30m)](https://youtu.be/7GwptabrYyk)
 
 # Links
-
+- [Java Modules](https://docs.oracle.com/en/java/javase/18/docs/api/java.base/module-summary.html)
+- [Java Class Hierarchy](https://docs.oracle.com/en/java/javase/18/docs/api/overview-tree.html)
 
 # Overview
 - There are two types in Java: Primitvie Types and Reference Types:
@@ -41,6 +42,5 @@ A reference repo that illustrates the following:
 - The debugger is your friend!
 - Lists/Arrays are zero based (first item is zero)
 - Every Java app must have one static main method
-- % mod operator, returns the remainder of a number.  Handy to determine if numbers are even or odd
-Classes 
+- % (mod operator) returns the remainder of a number, this is handy when determing if a number is even or odd
 
