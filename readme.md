@@ -1,5 +1,5 @@
 # Java I Reference Repo
-A helper project that illustrates the use of the following:
+A reference repo that illustrates the following:
 - Variables
 - Scope
 - If Else
@@ -13,6 +13,13 @@ A helper project that illustrates the use of the following:
 - Constants
 - Precedence
 
-# Notes
-Built using ItelliJ IDEA 2021.2.2 (Community Edition)
+# Getting Started
+- Clone this repo
+- Open the `pom.xml` file "Open as Project"
+
+# Videos
+
+
+# Links
+
 
