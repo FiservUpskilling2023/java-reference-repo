@@ -8,13 +8,13 @@ public class Main {
 //        worker.ifElse();
 //        worker.switchKeyword();
 //        worker.loops();
-//        worker.equalityVersusIdentityTest();
-//        worker.functions();
 //        worker.processInput();
-//        worker.optionals();
 //        worker.enums();
 //        worker.constants();
 //        worker.casting();
 //        worker.precendence();
+//        worker.functions();
+//        worker.optionals();
+//        worker.equalityVersusIdentityTest();
     }
 }
