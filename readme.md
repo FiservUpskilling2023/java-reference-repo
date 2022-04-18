@@ -39,7 +39,10 @@ A reference repo that illustrates the following:
 # Overview
 - There are two types in Java: Primitvie Types and Reference Types:
   - [8 Primitive Types (Value Types)](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
-  - Reference types are objects
+    - Stored on the stack
+  - Reference types are objects (classes)
+    - Stored in heap memory, primitives in the class are stored in the heap
+- An object is an instance of a class
 - The debugger is your friend!
 - Lists/Arrays are zero based (first item is zero)
 - Every Java app must have one static main method
