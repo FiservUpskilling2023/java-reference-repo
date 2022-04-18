@@ -34,6 +34,7 @@ A reference repo that illustrates the following:
 # Links
 - [Java Modules](https://docs.oracle.com/en/java/javase/18/docs/api/java.base/module-summary.html)
 - [Java Class Hierarchy](https://docs.oracle.com/en/java/javase/18/docs/api/overview-tree.html)
+- [Scanner Doc](https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html)
 
 # Overview
 - There are two types in Java: Primitvie Types and Reference Types:
