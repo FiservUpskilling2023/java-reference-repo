@@ -200,31 +200,31 @@ public class Worker {
 
         updatePersonName(p, "Mary Beth");
         System.out.println(p);
-//
-//        p = updatePersonName2(p, "Mary");
-//        System.out.println(p);
-//
-//        // Primitives...
-//        int magicNumber = getMagicNumber();
-//        int magicNumber2 = getMagicNumber(2);
-//        System.out.println(magicNumber);
-//        System.out.println(magicNumber2);
-//
-//        // Primitives are passed by value (AKA passed by copy), their value will not persisted after returning from the function.
-//        System.out.println("*** Pass by Value ***");
-//        System.out.println(magicNumber);
 
-//        int magicNumber = 42;
-//        incrementMagicNumber(magicNumber);
-//        System.out.println(magicNumber);
+        p = updatePersonName2(p, "Mary");
+        System.out.println(p);
 
-//        var students = getStudents();
-//        for (String studentName : students) {
-//            System.out.printf(String.format("%s\n", studentName));
-//        }
-//
-//        var p2 = createPerson("Billy");
-//        System.out.println(p2);
+        // Primitives...
+        int magicNumber = getMagicNumber();
+        int magicNumber2 = getMagicNumber(2);
+        System.out.println(magicNumber);
+        System.out.println(magicNumber2);
+
+        // Primitives are passed by value (AKA passed by copy), their value will not persisted after returning from the function.
+        System.out.println("*** Pass by Value ***");
+        System.out.println(magicNumber);
+
+        // int magicNumber = 42;
+        incrementMagicNumber(magicNumber);
+        System.out.println(magicNumber);
+
+        var students = getStudents();
+        for (String studentName : students) {
+            System.out.printf(String.format("%s\n", studentName));
+        }
+
+        var p2 = createPerson("Billy");
+        System.out.println(p2);
     }
 
     public void equalityVersusIdentityTest() {
