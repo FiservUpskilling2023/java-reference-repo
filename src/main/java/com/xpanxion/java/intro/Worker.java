@@ -22,13 +22,15 @@ public class Worker {
     //
 
     public void test() {
-        var s = new Scanner(System.in);
+        // Scanner
+        // Print, println
+        // nextInt()
+        // nextLine()
+        // for
 
-        var in = s.nextLine();
 
-        for (int i = 0; i < Integer.parseInt(in); i++) {
-            System.out.println("test");
-        }
+
+
     }
 
 
