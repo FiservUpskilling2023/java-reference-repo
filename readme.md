@@ -37,6 +37,7 @@ A reference repo that illustrates the following:
 - [Java Modules](https://docs.oracle.com/en/java/javase/18/docs/api/java.base/module-summary.html)
 - [Java Class Hierarchy](https://docs.oracle.com/en/java/javase/18/docs/api/overview-tree.html)
 - [Scanner Doc](https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html)
+- [Integer vs int](https://www.geeksforgeeks.org/difference-between-an-integer-and-int-in-java/#:~:text=In%20Java%2C%20int%20is%20a,and%20manipulating%20an%20int%20data.)
 
 # Overview
 Every program is a set of instructions, whether it’s to add two numbers or send a request over the Internet. Compilers and interpreters take human-readable code and convert it to computer-readable machine code.

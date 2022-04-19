@@ -21,13 +21,23 @@ public class Worker {
     // Public methods
     //
 
-    public void test() {
-        // Scanner
-        // Print, println
-        // nextInt()
-        // nextLine()
-        // for
+    public void test() { // Functions/Methods
 
+
+//        System.out.print("Enter number: ");
+//        Scanner scanner = new Scanner(System.in);
+//        var number = scanner.nextLine();
+//
+//        for (int i = 0; i < 3; i++) {
+//            System.out.println(i);
+//        }
+
+//        int intArray[] = {1,2,3};
+//        System.out.println(intArray[0]);
+//        System.out.println(intArray[1]);
+
+//        String myString = "test";
+//        int a = myString;
 
 
 
@@ -74,6 +84,15 @@ public class Worker {
             var myInteger = Integer.parseInt(myString3);
             System.out.println(myString3);
         }
+
+        // Bitshifting...
+        // 0000 = 0
+        // 0001 = 1
+        // 0010 = 2
+        // 0100 = 4
+        // 1000 = 8
+        var bitShifting = Integer.rotateLeft(1,3);
+        System.out.println(bitShifting);
 
         // Arrays...
         System.out.println("*** Arrays ***");
