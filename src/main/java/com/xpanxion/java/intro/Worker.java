@@ -21,6 +21,17 @@ public class Worker {
     // Public methods
     //
 
+    public void test() {
+        var s = new Scanner(System.in);
+
+        var in = s.nextLine();
+
+        for (int i = 0; i < Integer.parseInt(in); i++) {
+            System.out.println("test");
+        }
+    }
+
+
     public void variables() {
         // Strings...
         System.out.println("*** Strings ***");

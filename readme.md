@@ -25,11 +25,13 @@ A reference repo that illustrates the following:
 - [Java For Beginners: While, Do While & For Loops (11m)](https://youtu.be/6djggrlkHY8)
 - [Java Enum Tutorial (6m)](https://youtu.be/hrEF3M2LCrc)
 - [Java Final Keyword Tutorial - Learn Final Variables, Methods and Classes (7m)](https://youtu.be/730BMKm4qYM)
-- [Casting in Java (8m)](https://youtu.be/9ATVKpRZaPg)
+- [Casting (8m)](https://youtu.be/9ATVKpRZaPg)
 - [Operator Precedence (Java Tutorial) (5m)](https://youtu.be/gEJEDdambGc)		
 - [Identity vs. Equality in Java with coding examples (6m)](https://youtu.be/OOpO46_k7Uo	)
 - [Java is pass/call by value or pass/call by reference (8m)](https://youtu.be/w4sGl3HxgZw)
 - [Java OOPs Concepts (30m)](https://youtu.be/7GwptabrYyk)
+- [Memory (10m)](https://youtu.be/fM8yj93X80s)
+- [Garbage collection (5m)](https://youtu.be/fGO1GYz1irs)
 
 # Links
 - [Java Modules](https://docs.oracle.com/en/java/javase/18/docs/api/java.base/module-summary.html)
@@ -37,14 +39,31 @@ A reference repo that illustrates the following:
 - [Scanner Doc](https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html)
 
 # Overview
+Every program is a set of instructions, whether it’s to add two numbers or send a request over the Internet. Compilers and interpreters take human-readable code and convert it to computer-readable machine code.
+
+### The World of Twos
+- [Two types](https://codeburst.io/declarative-vs-imperative-programming-a8a7c93d9ad2) of languages:
+  - Declarative (SQL)
+  - Imperative (JavaScript, Java)
+- [Two types](https://www.freecodecamp.org/news/compiled-versus-interpreted-languages/) of programs:
+  - Compiled (Java)
+  - Interpreted (JavaScript)
+- [Two types](https://www.educative.io/edpresso/statically-v-dynamically-v-strongly-v-weakly-typed-languages) of typing:
+  - Statically Typed (Checked at compile time) (Java)
+  - Dynamically Typed (Checked at run time) (JavaScript)
+- [Two types](https://www.educative.io/edpresso/statically-v-dynamically-v-strongly-v-weakly-typed-languages) of strength:
+  - Strongly Typed (No implicit conversions allowed) (Java)
+  - Weekly Type (implicit conversions allowed) (JavaScript)
+- Two types of levels:
+  - One (+5v, +3v)
+  - Zero (0 volts)
+  
+# Java I
 - There are two types in Java: Primitvie Types and Reference Types:
   - [8 Primitive Types (Value Types)](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
     - Stored on the stack
   - Reference types are objects (classes)
     - Stored in heap memory, primitives in the class are stored in the heap
-- An object is an instance of a class
-- The debugger is your friend!
 - Lists/Arrays are zero based (first item is zero)
 - Every Java app must have one static main method
-- % (mod operator) returns the remainder of a number, this is handy when determing if a number is even or odd
 
