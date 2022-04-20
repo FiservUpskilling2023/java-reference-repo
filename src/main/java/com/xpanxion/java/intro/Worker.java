@@ -33,14 +33,15 @@ public class Worker {
 //            System.out.println(i);
 //        }
 
-//        int intArray[] = {1,2,3};
-//        System.out.println(intArray[0]);
-//        System.out.println(intArray[1]);
+//        int myArray[] = {1,2,3};
+//        System.out.println(myArray[0]);
+//        System.out.println(myArray[1]);
 
         // Casting...
-//        String myString = "1";
-//        int a = Integer.parseInt(myString);
+        String myString = "1";
+        int myNumber = Integer.parseInt(myString); // static method
 
+        System.out.println(myNumber);
     }
 
     public void primitiveTypes() {
@@ -48,9 +49,9 @@ public class Worker {
         // 1 Byte = 8 Bits (1111 1111)
         // 4 Bytes = 32 Bits (1111 1111 1111 1111 1111 1111 1111 1111)
         // Integer = 2 pow 31
-        // -2,147,483,648 2,147,483,647
+        // -2,147,483,648 -- 2,147,483,647
 
-        Byte myByte = 127;
+        Byte myByte = -128;
         int smallInt = -2147483648;
         int largeInt = 2147483647;
 
@@ -58,7 +59,8 @@ public class Worker {
 
         // Integer i = new Integer(1); // Deprecated.
 
-        Integer myInteger = 1;
+        int myNumber = 1;
+        Integer myInteger = 1; // Wrapping similar "abstraction"
         Double myDouble = 1.1;
         Float myFloat = 1.2F;  // Tell the compiler to treat it as float explicitly -> it uses f or F (Double by Default)
         Short myShort = 1;
@@ -72,6 +74,7 @@ public class Worker {
         // 0011    =>   3
         // 0100    =>   4
         // 1000    =>   8
+
         var num = Integer.rotateLeft(1, 3); // static method
         System.out.println(num);
     }
