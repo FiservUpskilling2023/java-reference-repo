@@ -22,12 +22,13 @@ public class Worker {
     //
 
     public void test() { // Functions/Methods
-
+        // for < > <= <=
 
 //        System.out.print("Enter number: ");
 //        Scanner scanner = new Scanner(System.in);
 //        var number = scanner.nextLine();
 //
+          // For loop
 //        for (int i = 0; i < 3; i++) {
 //            System.out.println(i);
 //        }
@@ -36,11 +37,43 @@ public class Worker {
 //        System.out.println(intArray[0]);
 //        System.out.println(intArray[1]);
 
-//        String myString = "test";
-//        int a = myString;
+        // Casting...
+//        String myString = "1";
+//        int a = Integer.parseInt(myString);
 
+    }
 
+    public void primitiveTypes() {
+        // Primitive types
+        // 1 Byte = 8 Bits (1111 1111)
+        // 4 Bytes = 32 Bits (1111 1111 1111 1111 1111 1111 1111 1111)
+        // Integer = 2 pow 31
+        // -2,147,483,648 2,147,483,647
 
+        Byte myByte = 127;
+        int smallInt = -2147483648;
+        int largeInt = 2147483647;
+
+        Integer i = 2147483647; // 2147483648 ???
+
+        // Integer i = new Integer(1); // Deprecated.
+
+        Integer myInteger = 1;
+        Double myDouble = 1.1;
+        Float myFloat = 1.2F;  // Tell the compiler to treat it as float explicitly -> it uses f or F (Double by Default)
+        Short myShort = 1;
+        Character d = 'd';
+
+        // Bit shifting...
+        // Base(2) => Base(10)
+        // 0000    =>   0
+        // 0001    =>   1
+        // 0010    =>   2
+        // 0011    =>   3
+        // 0100    =>   4
+        // 1000    =>   8
+        var num = Integer.rotateLeft(1, 3); // static method
+        System.out.println(num);
     }
 
 

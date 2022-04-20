@@ -68,3 +68,23 @@ Every program is a set of instructions, whether it’s to add two numbers or sen
 - Lists/Arrays are zero based (first item is zero)
 - Every Java app must have one static main method
 
+### Primitives
+- byte (Range: -128, 127)
+- short (Range: -32,768, 32,767)
+- int
+- long
+- float
+- double
+- boolean
+- char
+
+
+- Primitve Wrapper Objects:
+  - Byte
+  - Short
+  - Integer
+  - Long
+  - Float
+  - Double
+  - Boolean
+  - Character

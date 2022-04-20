@@ -3,7 +3,8 @@ package com.xpanxion.java.intro;
 public class Main {
     public static void main(String[] args) {
         Worker worker = new Worker();
-          worker.test();
+//        worker.test();
+        worker.primitiveTypes();
 //        worker.variables();
 //        worker.scope();
 //        worker.ifElse();
