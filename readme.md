@@ -77,8 +77,6 @@ Every program is a set of instructions, whether it’s to add two numbers or sen
 - double
 - boolean
 - char
-
-
 - Primitve Wrapper Objects:
   - Byte
   - Short
