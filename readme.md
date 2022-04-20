@@ -50,7 +50,7 @@ Every program is a set of instructions, whether it’s to add two numbers or sen
   - Compiled (Java)
   - Interpreted (JavaScript)
 - [Two types](https://www.educative.io/edpresso/statically-v-dynamically-v-strongly-v-weakly-typed-languages) of strength:
-  - Strongly Typed (No implicit conversions allowed) (Java)
+  - Strongly Typed (No implicit conversions allowed) (Java, TypeScript)
   - Weekly Type (implicit conversions allowed) (JavaScript)
 - [Two types](https://www.educative.io/edpresso/statically-v-dynamically-v-strongly-v-weakly-typed-languages) of typing:
   - Statically Typed (Checked at compile time) (Java)
