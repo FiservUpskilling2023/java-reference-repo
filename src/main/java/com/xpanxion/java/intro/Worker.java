@@ -57,6 +57,8 @@ public class Worker {
 
         Integer i = 2147483647; // 2147483648 ???
 
+        float l = 30000000000000F;
+
         // Integer i = new Integer(1); // Deprecated.
 
         int myNumber = 1;
@@ -65,6 +67,8 @@ public class Worker {
         Float myFloat = 1.2F;  // Tell the compiler to treat it as float explicitly -> it uses f or F (Double by Default)
         Short myShort = 1;
         Character d = 'd';
+        char name[] = {'j', 'o', 'e'};
+        System.out.println(String.valueOf(name));
 
         // Bit shifting...
         // Base(2) => Base(10)
