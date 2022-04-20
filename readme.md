@@ -49,12 +49,12 @@ Every program is a set of instructions, whether it’s to add two numbers or sen
 - [Two types](https://www.freecodecamp.org/news/compiled-versus-interpreted-languages/) of programs:
   - Compiled (Java)
   - Interpreted (JavaScript)
-- [Two types](https://www.educative.io/edpresso/statically-v-dynamically-v-strongly-v-weakly-typed-languages) of typing:
-  - Statically Typed (Checked at compile time) (Java)
-  - Dynamically Typed (Checked at run time) (JavaScript)
 - [Two types](https://www.educative.io/edpresso/statically-v-dynamically-v-strongly-v-weakly-typed-languages) of strength:
   - Strongly Typed (No implicit conversions allowed) (Java)
   - Weekly Type (implicit conversions allowed) (JavaScript)
+- [Two types](https://www.educative.io/edpresso/statically-v-dynamically-v-strongly-v-weakly-typed-languages) of typing:
+  - Statically Typed (Checked at compile time) (Java)
+  - Dynamically Typed (Checked at run time) (JavaScript)
 - Two types of levels:
   - One (+5v, +3v)
   - Zero (0 volts)
