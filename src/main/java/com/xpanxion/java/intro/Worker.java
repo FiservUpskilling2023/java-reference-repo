@@ -42,22 +42,9 @@ public class Worker {
         String myString = "1";
         int myNumber = Integer.parseInt(myString); // static method
 
-        // Junk
+        // Temp
 
-        System.out.print("Enter a sentence: ");
-        int count = 0;
-        var s = new Scanner(System.in);
-        var is = s.nextLine();
-        var st = new StringTokenizer(is);
 
-        while(st.hasMoreTokens()){
-            if (st.nextToken().compareToIgnoreCase("is") == 0) {
-                count++;
-            }
-        }
-        System.out.println(count);
-
-        //System.out.println( st.countTokens());
 
 
     }
