@@ -8,6 +8,7 @@ import com.xpanxion.java.intro.models.Person;
 
 import java.util.Optional;
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 public class Worker {
 
@@ -41,10 +42,9 @@ public class Worker {
         String myString = "1";
         int myNumber = Integer.parseInt(myString); // static method
 
-        System.out.println(myNumber);
     }
 
-    public void primitiveTypes() {
+    public void primitiveTypesAndWrappers() {
         // Primitive types
         // 1 Byte = 8 Bits (1111 1111)
         // 4 Bytes = 32 Bits (1111 1111 1111 1111 1111 1111 1111 1111)
