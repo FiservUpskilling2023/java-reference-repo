@@ -406,13 +406,14 @@ public class Worker {
 
     public void constants() {
         final int MEANING_OF_LIFE = 42;
-        // MEANING_OF_LIFE = 1; // Cannot do this.
+        // MEANING_OF_LIFE = 1; // Will not compile.
     }
 
     public void casting() {
+        // Implicit casting...
         byte s = 1;
         double d = 1;
-        var total = s + d;  // s is implicity cast to a double
+        var total = s + d;  // s is implicity cast (up or promoted) to a double
         System.out.println(total);
 
         int a = 3;
@@ -420,6 +421,7 @@ public class Worker {
         var result = a + b; // a is implicty cast (up) to a double (wide cast) (widden/up casted/promoted)
         System.out.println(result);
 
+        // Explicit casting...
         int c = (int)b; // c is explicity cast (down) to an integer.
         System.out.println(c);
     }
