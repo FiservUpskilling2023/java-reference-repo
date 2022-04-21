@@ -25,18 +25,18 @@ public class Worker {
     public void test() { // Functions/Methods
         // for < > <= <=
 
-//        System.out.print("Enter number: ");
-//        Scanner scanner = new Scanner(System.in);
-//        var number = scanner.nextLine();
-//
-          // For loop
-//        for (int i = 0; i < 3; i++) {
-//            System.out.println(i);
-//        }
+        System.out.print("Enter number: ");
+        Scanner scanner = new Scanner(System.in);
+        var number = scanner.nextLine();
 
-//        int myArray[] = {1,2,3};
-//        System.out.println(myArray[0]);
-//        System.out.println(myArray[1]);
+        // For loop
+        for (int i = 0; i < 3; i++) {
+            System.out.println(i);
+        }
+
+        int myArray[] = {1, 2, 3};
+        System.out.println(myArray[0]);
+        System.out.println(myArray[1]);
 
         // Casting...
         String myString = "1";
@@ -100,16 +100,17 @@ public class Worker {
         System.out.println(myString2);
         System.out.println(thing);
 
-        var mySpecialString = "----- Title -----\nLine one.\nLine two.\nLine three.\nLine four:\tone\ttwo\tthree";  // Backslash represents an escape character.
+        // Backslash represents an escape character. \n => Newline \t ==> tab \r\n ==> for Windows.
+        var mySpecialString = "----- Title -----\nLine one.\nLine two.\nLine three.\nLine four:\tone\ttwo\tthree";
         System.out.println(mySpecialString);
 
         // Numbers...
         System.out.println("*** Numbers ***");
-        int myNumber1 = 1;
-        Integer myNumber2 = 1; // Integer wraps int.
+        int myNumber1 = 1; // Primitive type
+        Integer myNumber2 = 1; // Integer wrapper, extends the primitive type.
 
-        double myNumber3 = 1.2;
-        Double myNumber4 = 1.2; // Double wraps double.
+        double myNumber3 = 1.2; // Primitive type
+        Double myNumber4 = 1.2; // Double wrapper, extends the primitive type.
 
         System.out.println(myNumber1);
         System.out.println(myNumber2);
@@ -183,6 +184,8 @@ public class Worker {
         int age = 25;
 
         // Single if...
+        // Single equals "=" is an assignment operator
+        // Double equals "==" is equality for primitives types
         if (age == 25) {
             System.out.println("Age is equal to 25.");
         }
@@ -194,10 +197,10 @@ public class Worker {
             System.out.println("Age is not equal to 25.");
         }
 
-        // Else if...
+        // if else if...
         if (age < 10) {
             System.out.println("Young");
-        } else if (age >=11 && age < 20) {
+        } else if (age >=11 && age < 20) { // && => and
             System.out.println("Child");
         } else if (age >= 20) {
             System.out.println("Adult");
@@ -252,6 +255,8 @@ public class Worker {
         // Do While loop.
         int k = 0;
         do {
+            // If you know for sure that you are going to do something
+            // ONCE before you check, use a do while loop.
             System.out.println(k);
             k++;
         }
@@ -259,8 +264,8 @@ public class Worker {
 
         // Foreach.
         int[] array = { 1, 2, 3 };
-        for (int num : array) {
-            System.out.println(num);
+        for (int n : array) {
+            System.out.println(n);
         }
     }
 
@@ -305,8 +310,8 @@ public class Worker {
     }
 
     public void equalityVersusIdentityTest() {
-        // Identity: Are these object references pointing to the same place in memory?
-        // Equality: Are these two objects equal to each other as specified by us.
+        // Identity: Are these object references (pointers) pointing to the same place (object) in memory?
+        // Equality: Are these two objects equal to each other as specified in our domain/context.
 
         //
         // PRIMITIVE TYPES (AKA VALUE TYPES): byte, short, int, long, float, double, char, boolean
@@ -387,7 +392,7 @@ public class Worker {
         p2.ifPresent((p) -> System.out.println(p.name)); // This line is executed only if there is a value present.
     }
 
-    public void enums() {
+    public void enums() { // Enumerated constant.
         var m = Make.CHEVY;
         System.out.println(m);
 
@@ -412,15 +417,16 @@ public class Worker {
     }
 
     public void constants() {
-        final int MEANING_OF_LIFE = 42;
-        // MEANING_OF_LIFE = 1; // Will not compile.
+        final int MEANING_OF_LIFE = 42; // In this context, final means this cannot be changed.
+        // BTW - Final has another meaning in OOP.
+        //MEANING_OF_LIFE = 1; // Will not compile.
     }
 
     public void casting() {
         // Implicit casting...
         byte s = 1;
         double d = 1;
-        var total = s + d;  // s is implicity cast (up or promoted) to a double
+        var total = s + d;  // s is implicity cast (up or promoted) to a double (GENERAL term is casting)
         System.out.println(total);
 
         int a = 3;
@@ -429,14 +435,17 @@ public class Worker {
         System.out.println(result);
 
         // Explicit casting...
-        int c = (int)b; // c is explicity cast (down) to an integer.
+        int c = (int)b; // c is explicity cast (down) to an integer. // Could be potentially bad, we might lose info.
         System.out.println(c);
     }
 
     public void precendence() {
+        // Full version: https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html
         // () <== Highest
-        // * /
-        // + - <== Lowest
+        // *
+        // /
+        // +
+        // - <== Lowest
         int result1 = 4 * 2 / 1 + 1;
         int result2 = (4 * 2) / 1 + 1;
         int result3 = 4 * (2 / 1 + 1);
