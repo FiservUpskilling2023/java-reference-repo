@@ -42,6 +42,24 @@ public class Worker {
         String myString = "1";
         int myNumber = Integer.parseInt(myString); // static method
 
+        // Junk
+
+        System.out.print("Enter a sentence: ");
+        int count = 0;
+        var s = new Scanner(System.in);
+        var is = s.nextLine();
+        var st = new StringTokenizer(is);
+
+        while(st.hasMoreTokens()){
+            if (st.nextToken().compareToIgnoreCase("is") == 0) {
+                count++;
+            }
+        }
+        System.out.println(count);
+
+        //System.out.println( st.countTokens());
+
+
     }
 
     public void primitiveTypesAndWrappers() {
@@ -300,6 +318,8 @@ public class Worker {
     }
 
     public void equalityVersusIdentityTest() {
+        // Identity: Are these object references pointing to the same place in memory?
+        // Equality: Are these two objects equal to each other as specified by us.
 
         //
         // PRIMITIVE TYPES (AKA VALUE TYPES): byte, short, int, long, float, double, char, boolean
@@ -334,7 +354,7 @@ public class Worker {
         }
 
         // Equality.
-        if (p2.equals(p3)) { // Two people are equal if they have the same name, because we said so in the Person class.
+        if (p2.equals(p3)) { // Two people are equal if they have the same name, because we built this logic in the Person class.
             System.out.println("p2 and p3 are considered to be equal but are different objects in memory.");
         }
     }
