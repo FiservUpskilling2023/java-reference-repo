@@ -2,8 +2,9 @@ package com.xpanxion.java.intro;
 
 public class Main {
     public static void main(String[] args) {
-        Worker worker = new Worker();
-        worker.test();
+        Worker worker = new Worker("Joe");
+        worker.codeWithMarty();
+//        worker.test();
 //        worker.primitiveTypesAndWrappers();
 //        worker.variables();
 //        worker.scope();

@@ -32,6 +32,8 @@ A reference repo that illustrates the following:
 - [Java OOPs Concepts (30m)](https://youtu.be/7GwptabrYyk)
 - [Memory (10m)](https://youtu.be/fM8yj93X80s)
 - [Garbage collection (5m)](https://youtu.be/fGO1GYz1irs)
+- [OOP: Object-oriented Programming in (7m)](https://youtu.be/pTB0EiLXUC8)
+- [OOP: Object Oriented Programming In Java ](https://youtu.be/6T_HgnjoYwM)
 
 # Links
 - [Java Modules](https://docs.oracle.com/en/java/javase/18/docs/api/java.base/module-summary.html)

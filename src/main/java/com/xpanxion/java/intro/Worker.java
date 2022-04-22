@@ -6,11 +6,15 @@ import com.xpanxion.java.intro.enums.DaysOfWeek;
 import com.xpanxion.java.intro.exceptions.PersonNotFoundException;
 import com.xpanxion.java.intro.models.Person;
 
-import java.util.Optional;
-import java.util.Scanner;
-import java.util.StringTokenizer;
+import java.util.*;
 
 public class Worker {
+
+    //
+    // Data members
+    //
+
+    private String name;
 
     //
     // Constructors
@@ -18,9 +22,74 @@ public class Worker {
 
     public Worker() { } // No argument constructor.
 
+    public Worker(String name) {
+        this.name = name;
+    }
+
+    //
+    // Accessors
+    //
+
+    public String getName() {
+        return name;
+    }
+
     //
     // Public methods
     //
+
+    public void codeWithMarty() {
+
+        // Strings
+//        var myString = "test";     //
+//        System.out.println(myString);
+//        myString = "test2";        //
+//        System.out.println(myString);
+//        myString = "marty";       //
+//        System.out.println(myString);
+//        myString = "joe";         // address: 999 joe
+//        System.out.println(myString);
+
+        var stringBuilder = new StringBuilder("My name is");
+        stringBuilder.append("My name is ");
+        stringBuilder.append("Marty and I am: ");
+        stringBuilder.append(52);
+        stringBuilder.append(" years old.");
+        var ss = "My name is" + " Marty and I am" + 52 + " years old.";
+
+
+        //System.out.println(stringBuilder.toString());
+
+
+        // Arrays
+        int[] array = {1,2,3};
+
+        var list2 = new ArrayList<Integer>(); // 1, 2, 3
+        list2.add(1);
+        list2.add(2);
+        list2.add(3);
+
+
+        var l = new ArrayList<>(list2);
+        System.out.println(l);
+
+
+//        for (Integer num: list) { // foreach
+//            //System.out.println(num);
+//        }
+
+        // Code with Me
+
+
+
+//        for (int i = 0; i < 3; i++) {
+//            System.out.println(i);
+//        }
+
+//        String myString = "1";
+//        int a = myString;
+
+    }
 
     public void test() { // Functions/Methods
         // for < > <= <=
@@ -41,11 +110,6 @@ public class Worker {
         // Casting...
         String myString = "1";
         int myNumber = Integer.parseInt(myString); // static method
-
-        // Temp
-
-
-
 
     }
 
