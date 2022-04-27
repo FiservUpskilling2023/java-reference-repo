@@ -346,8 +346,8 @@ public class Worker {
 
     public void passByValuePassByReference() {
         int number = 42;
-        var message = "Hello World";
-        var person = new Person("Jon");
+        String message = "Hello World";
+        Person person = new Person("Jon");
 
         // update(number, message, person);
 
