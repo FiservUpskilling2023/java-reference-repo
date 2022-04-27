@@ -19,6 +19,14 @@ public class Person {
     }
 
     //
+    // Accessors
+    //
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    //
     // Overrides
     //
 

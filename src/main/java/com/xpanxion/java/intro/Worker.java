@@ -349,7 +349,7 @@ public class Worker {
         String message = "Hello World";
         Person person = new Person("Jon");
 
-        // update(number, message, person);
+        //update(number, message, person);
 
         System.out.println(number);
         System.out.println(message);
@@ -359,7 +359,7 @@ public class Worker {
     private void update(int number, String message, Person person) {
         number = 5150;
         message = "Goodbye World";
-        person.name = "Fred";
+        person.setName("Fred");
     }
 
     public void equalityVersusIdentityTest() {
