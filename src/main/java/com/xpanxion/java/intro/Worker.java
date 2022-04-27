@@ -38,57 +38,28 @@ public class Worker {
     // Public methods
     //
 
-    public void codeWithMarty() {
+    // A method is a function that belongs to a class.
+    private Integer add() { // function/method signature, this returns an Integer
+        // Not much here...
+        return 5150;
+    }
 
-        // Strings
-//        var myString = "test";     //
-//        System.out.println(myString);
-//        myString = "test2";        //
-//        System.out.println(myString);
-//        myString = "marty";       //
-//        System.out.println(myString);
-//        myString = "joe";         // address: 999 joe
-//        System.out.println(myString);
+    // We can pass
+    private Integer add(Integer num1, Integer num2) { // Overloaded, two Integer parameters.
+        return num1 + num2;
+    }
 
-        var stringBuilder = new StringBuilder("My name is");
-        stringBuilder.append("My name is ");
-        stringBuilder.append("Marty and I am: ");
-        stringBuilder.append(52);
-        stringBuilder.append(" years old.");
-        var ss = "My name is" + " Marty and I am" + 52 + " years old.";
+    // We can pass at most 255 arguments into a function.
+    // Typically the max is 7-9.
+    private Integer add(Integer num1, Integer num2, Integer num3) { // Overloaded, three Integer parameters.
+        // A function stub.
+        return 5150;  // Hardcoding, Hard coding is the software development practice of
+        // embedding data directly into the source code of a program or other executable object.
+    }
 
-
-        //System.out.println(stringBuilder.toString());
-
-
-        // Arrays
-        int[] array = {1,2,3};
-
-        var list2 = new ArrayList<Integer>(); // 1, 2, 3
-        list2.add(1);
-        list2.add(2);
-        list2.add(3);
-
-
-        var l = new ArrayList<>(list2);
-        System.out.println(l);
-
-
-//        for (Integer num: list) { // foreach
-//            //System.out.println(num);
-//        }
-
-        // Code with Me
-
-
-
-//        for (int i = 0; i < 3; i++) {
-//            System.out.println(i);
-//        }
-
-//        String myString = "1";
-//        int a = myString;
-
+    private void doWork() { // Subroutine is a type of function that returns nothing.
+        // Do something
+        // Then we will exit
     }
 
     public void test() { // Functions/Methods
@@ -371,6 +342,21 @@ public class Worker {
 
         var p2 = createPerson("Billy");
         System.out.println(p2);
+    }
+
+    public void passByValuePassByReference() {
+        int number = 42;
+        var person = new Person("Jon");
+
+        // update(number, person);
+
+        System.out.println(number);
+        System.out.println(person);
+    }
+
+    private void update(int number, Person person) {
+        number = 5150;
+        person.name = "Fred";
     }
 
     public void equalityVersusIdentityTest() {

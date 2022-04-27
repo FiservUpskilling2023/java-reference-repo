@@ -3,7 +3,7 @@ package com.xpanxion.java.intro;
 public class Main {
     public static void main(String[] args) {
         Worker worker = new Worker("Joe");
-        worker.codeWithMarty();
+//        worker.codeWithMarty();
 //        worker.test();
 //        worker.primitiveTypesAndWrappers();
 //        worker.variables();
@@ -17,6 +17,7 @@ public class Main {
 //        worker.casting();
 //        worker.precendence();
 //        worker.functions();
+          worker.passByValuePassByReference();
 //        worker.optionals();
 //        worker.equalityVersusIdentityTest();
     }
