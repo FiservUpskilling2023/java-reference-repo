@@ -346,16 +346,19 @@ public class Worker {
 
     public void passByValuePassByReference() {
         int number = 42;
+        var message = "Hello World";
         var person = new Person("Jon");
 
-        // update(number, person);
+        // update(number, message, person);
 
         System.out.println(number);
+        System.out.println(message);
         System.out.println(person);
     }
 
-    private void update(int number, Person person) {
+    private void update(int number, String message, Person person) {
         number = 5150;
+        message = "Goodbye World";
         person.name = "Fred";
     }
 
